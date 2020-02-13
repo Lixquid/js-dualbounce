@@ -1,0 +1,68 @@
+{
+    "name": "dualbounce",
+    "version": "0.0.0",
+    "description": "Debounce stuttering changes into a single change.",
+    "main": "dist/index.js",
+    "files": [
+        "dist/*"
+    ],
+    "scripts": {
+        "test": "jest",
+        "build": "tsc",
+        "lint:prettier": "prettier -c src/**/*.ts",
+        "lint:eslint": "eslint src/**/*.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/lixquid/dualbounce.git"
+    },
+    "keywords": [
+        "function",
+        "throttle",
+        "debounce"
+    ],
+    "author": {
+        "name": "Lixquid",
+        "url": "https://lixquid.com/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://gitlab.com/lixquid/dualbounce/issues"
+    },
+    "homepage": "https://gitlab.com/lixquid/dualbounce#readme",
+    "devDependencies": {
+        "@types/jest": "^25.1.2",
+        "@typescript-eslint/eslint-plugin": "^2.19.2",
+        "@typescript-eslint/parser": "^2.19.2",
+        "eslint": "^6.8.0",
+        "jest": "^25.1.0",
+        "prettier": "^1.19.1",
+        "ts-jest": "^25.2.0",
+        "typescript": "^3.7.5"
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "plugins": [
+            "@typescript-eslint"
+        ],
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/eslint-recommended",
+            "plugin:@typescript-eslint/recommended"
+        ]
+    },
+    "jest": {
+        "transform": {
+            ".(ts|tsx)": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ]
+    }
+}
