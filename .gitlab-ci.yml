@@ -7,7 +7,7 @@ cache:
 build:
     stage: build
     script:
-        - tsc
+        - yarn build
 
 test:
     stage: test
