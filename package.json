@@ -1,6 +1,6 @@
 {
     "name": "dualbounce",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Debounce stuttering changes into a single change.",
     "main": "dist/index.js",
     "files": [
